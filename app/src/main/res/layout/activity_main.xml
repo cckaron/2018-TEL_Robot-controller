@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="69dp"
+        android:layout_marginStart="24dp"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/btn_right"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btn_left"
+        android:text="Right" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:text="Reset" />
+
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/ev3_tv"
+        android:layout_marginEnd="20dp"
+        android:text="Connect" />
+
+    <Button
+        android:id="@+id/btn_ev3_down"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btn_ev3_up"
+        android:text="DOWN" />
+
+    <Button
+        android:id="@+id/btn_ev3_up"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btn_left"
+        android:layout_marginTop="85dp"
+        android:text="UP" />
+
+    <Button
+        android:id="@+id/btn_left"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="98dp"
+        android:layout_marginEnd="109dp"
+        android:text="Left" />
+
+    <Button
+        android:id="@+id/btn_front"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btn_back"
+        android:layout_marginTop="114dp"
+        android:text="Front" />
+
+    <TextView
+        android:id="@+id/esp_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ev3_tv"
+        android:layout_below="@+id/ev3_tv"
+        android:text="ESP Status："
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/ev3_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="12dp"
+        android:text="EV3 Status："
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/esp_status_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/esp_tv"
+        android:layout_toEndOf="@+id/esp_tv"
+        android:text="disconnected"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/ev3_status_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/esp_tv"
+        android:layout_toEndOf="@+id/esp_tv"
+        android:text="disconnected"
+        android:textSize="30sp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="244dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="94dp"
+        android:max="180" />
+
+    <TextView
+        android:id="@+id/degree_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="184dp"
+        android:text="Degree"
+        android:textSize="30sp" />
+
+</RelativeLayout>
