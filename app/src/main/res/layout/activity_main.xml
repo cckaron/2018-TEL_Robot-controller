@@ -4,114 +4,179 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
+    android:background="@drawable/venom"
 tools:context=".MainActivity">
+
 
     <Button
         android:id="@+id/btn_back"
         android:layout_width="100dp"
-        android:layout_height="60dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="69dp"
-        android:layout_marginStart="24dp"
-        android:text="Back" />
+        android:text="後退" />
 
     <Button
         android:id="@+id/btn_right"
         android:layout_width="100dp"
-        android:layout_height="60dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/btn_left"
-        android:text="Right" />
+        android:layout_height="80dp"
+        android:layout_below="@id/btn_release"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:text="右轉" />
 
     <Button
-        android:id="@+id/btn_reset"
+        android:id="@+id/btn_connectESP"
         android:layout_width="100dp"
         android:layout_height="60dp"
-        android:layout_centerInParent="true"
-        android:text="Reset" />
+        android:layout_toRightOf="@+id/btn_connectEV3"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="連線" />
 
     <Button
-        android:id="@+id/btn_connect"
+        android:id="@+id/btn_connectEV3"
         android:layout_width="100dp"
         android:layout_height="60dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/ev3_tv"
-        android:layout_marginEnd="20dp"
-        android:text="Connect" />
+
+        android:layout_toRightOf="@+id/ev3_status_tv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="連線" />
 
     <Button
-        android:id="@+id/btn_ev3_down"
+        android:id="@+id/btn_get"
         android:layout_width="100dp"
         android:layout_height="60dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/btn_ev3_up"
-        android:text="DOWN" />
+        android:layout_toLeftOf="@id/btn_release"
+        android:layout_below="@id/btn_pull"
+        android:text="收球" />
 
     <Button
-        android:id="@+id/btn_ev3_up"
+        android:id="@+id/btn_release"
         android:layout_width="100dp"
         android:layout_height="60dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/btn_left"
-        android:layout_marginTop="85dp"
-        android:text="UP" />
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/btn_put"
+        android:text="放球" />
+
+    <Button
+        android:id="@+id/btn_put"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btn_flatten"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:text="放下" />
+
+    <Button
+        android:id="@+id/btn_flatten"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:text="放盤" />
+
+    <Button
+        android:id="@+id/btn_gotcha"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_connectESP"
+        android:layout_toRightOf="@id/btn_ring"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="5dp"
+        android:text="Gotcha!" />
+
+    <Button
+        android:id="@+id/btn_ring"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_connectEV3"
+        android:layout_toRightOf="@+id/esp_status_tv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:text="敲鑼" />
+
+    <Button
+        android:id="@+id/btn_hold"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_toLeftOf="@id/btn_flatten"
+        android:layout_marginTop="5dp"
+        android:text="收盤" />
+
+    <Button
+        android:id="@+id/btn_pull"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_flatten"
+        android:layout_toLeftOf="@id/btn_put"
+        android:text="拉起" />
 
     <Button
         android:id="@+id/btn_left"
         android:layout_width="100dp"
-        android:layout_height="60dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/btn_get"
+        android:layout_marginBottom="10dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="98dp"
-        android:layout_marginEnd="109dp"
-        android:text="Left" />
+        android:layout_toLeftOf="@id/btn_right"
+        android:layout_marginTop="30dp"
+        android:text="左轉" />
 
     <Button
         android:id="@+id/btn_front"
         android:layout_width="100dp"
-        android:layout_height="60dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/btn_back"
-        android:layout_marginTop="114dp"
-        android:text="Front" />
+        android:layout_height="140dp"
+        android:layout_marginBottom="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:text="前進" />
 
     <TextView
         android:id="@+id/esp_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/ev3_tv"
         android:layout_below="@+id/ev3_tv"
-        android:text="ESP Status："
+        android:layout_marginLeft="10dp"
+        android:text="ESP: "
+        android:textColor="@android:color/white"
         android:textSize="30sp" />
 
     <TextView
         android:id="@+id/ev3_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="13dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="12dp"
-        android:text="EV3 Status："
+        android:text="EV3: "
+        android:textColor="@android:color/white"
         android:textSize="30sp" />
 
     <TextView
         android:id="@+id/esp_status_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/esp_tv"
-        android:layout_toEndOf="@+id/esp_tv"
-        android:text="disconnected"
+        android:layout_below="@+id/ev3_status_tv"
+        android:layout_toRightOf="@+id/esp_tv"
+        android:text="離線"
+        android:textColor="@android:color/white"
         android:textSize="30sp" />
 
     <TextView
         android:id="@+id/ev3_status_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/esp_tv"
-        android:layout_toEndOf="@+id/esp_tv"
-        android:text="disconnected"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/ev3_tv"
+        android:text="離線"
+        android:textColor="@android:color/white"
         android:textSize="30sp" />
 
     <SeekBar
@@ -119,19 +184,17 @@ tools:context=".MainActivity">
         android:layout_width="244dp"
         android:layout_height="45dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="17dp"
-        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="13dp"
+        android:layout_toStartOf="@+id/btn_get"
         android:max="180" />
 
     <TextView
         android:id="@+id/degree_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="44dp"
-        android:layout_marginEnd="184dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btn_back"
+        android:layout_marginStart="222dp"
         android:text="Degree"
         android:textSize="30sp" />
 
